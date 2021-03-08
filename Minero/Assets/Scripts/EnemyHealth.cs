@@ -38,9 +38,14 @@ public class EnemyHealth : MonoBehaviour
     {
         return Health / maxHealth;
     }
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Health -= 1;
+        if(other.tag == "PlayerBullet")
+        {
+            Health -= 1;
+        }else if(other.tag == "Wall")
+        {
+            Destroy(transform.gameObject);
+        }
     }
 }

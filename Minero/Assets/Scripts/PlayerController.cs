@@ -96,7 +96,8 @@ public class PlayerController : MonoBehaviour
                 //}
             }
             transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
-
+            ArrowPoint.transform.LookAt(new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z));
+            
         }
     }
 
