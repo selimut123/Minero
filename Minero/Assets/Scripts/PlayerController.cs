@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (joysticks.Horizontal != 0 || joysticks.Vertical != 0)
         {
             Vector3 pos = new Vector3(joysticks.Horizontal, -9.8f * Time.deltaTime, joysticks.Vertical);
@@ -95,9 +94,9 @@ public class PlayerController : MonoBehaviour
                 //distance = Vector3.Distance(transform.position, enemies[i].gameObject.transform.position);
                 //}
             }
+
             transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
             ArrowPoint.transform.LookAt(new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z));
-            
         }
     }
 
