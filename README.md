@@ -1,2 +1,2 @@
 # Minero
-Menjadi Game developer, mengalahkan manki-manki di valorant
+Creating a simple 3d shooting poly game, game devs
